@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template
+from app import mongo
 
 mod_main = Blueprint('main', __name__)
 
@@ -8,5 +9,6 @@ def index():
 
 @mod_main.route('/form')
 def form():
-	name= "Techstitution"
-	return render_template("form.html", name=name)
+	db = mongo.db.arkep
+	db.insert({"name":"arkep"})
+	return render_template("form.html")
