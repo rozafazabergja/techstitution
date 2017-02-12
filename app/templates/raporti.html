@@ -1,0 +1,44 @@
+{% extends 'index.html'%}
+{% block form %}
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+<dl class="dl-horizontal">
+    <dt>Emri:</dt>
+
+    <dd>{{ report['nderrmarja'] ['emri']}}</dd>
+</dl>
+
+<dl class="dl-horizontal">
+    <dt>Personi kontaktues:</dt>
+
+    <dd>{{ report['nderrmarja'] ['personi_kontaktues']}}</dd>
+</dl>
+
+<dl class="dl-horizontal">
+    <dt>Numri i Regjistrimit:</dt>
+
+    <dd>{{ report['nderrmarja'] ['numri_regjistrimi ']}}</dd>
+</dl>
+
+<dl class="dl-horizontal">
+    <dt>Adresa:</dt>
+
+    <dd>{{ report['nderrmarja'] ['adresa']}}</dd>
+</dl>
+
+<dl class="dl-horizontal">
+    <dt>Telefoni:</dt>
+
+    <dd>{{ report['nderrmarja'] ['telefoni']}}</dd>
+</dl>
+
+<dl class="dl-horizontal">
+    <dt>Email:</dt>
+
+    <dd>{{ report['nderrmarja'] ['email']}}</dd>
+</dl>
+</div>
+</div>
+</div>
+{% endblock form %}
